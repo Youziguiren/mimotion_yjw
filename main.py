@@ -317,6 +317,7 @@ if __name__ == "__main__":
     else:
         # region 初始化参数
         config = dict()
+        print(os.environ.__contains__("CONFIG"))
         try:
             config = dict(json.loads(os.environ.get("CONFIG")))
         except:
